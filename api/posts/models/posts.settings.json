@@ -33,6 +33,11 @@
     "comments": {
       "via": "post",
       "collection": "comments"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "posts"
     }
   }
 }

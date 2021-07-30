@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auth_comments",
+  "info": {
+    "name": "AuthComments",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "auth_comments"
+    }
+  }
+}
